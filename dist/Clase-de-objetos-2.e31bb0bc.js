@@ -133,7 +133,10 @@ var pregunta = prompt("Hola, sean todos bienvenidos al restaurante Q'le arepa. Â
 var cliente = {
   nombre: '',
   apellido: '',
-  edad: 0
+  edad: 0,
+  datos: function datos() {
+    return "".concat(this.nombre, " ").concat(this.apellido, " ").concat(this.edad);
+  }
 };
 var x = [cliente];
 
@@ -175,7 +178,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53197" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56338" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

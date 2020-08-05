@@ -18,6 +18,9 @@ const cliente = {
   nombre: '',
   apellido: '',
   edad: 0,
+    datos() {
+    return `${this.nombre} ${this.apellido} ${this.edad}`;
+    } 
   };
   const x = [cliente];
 
@@ -31,3 +34,4 @@ const cliente = {
   for (let i = 0; i < x.length; i++) {
     console.log(x[i]);
 }
+
