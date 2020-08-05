@@ -137,7 +137,7 @@ var cliente = {
 };
 var x = [];
 
-for (var index = 0; index <= pregunta; index++) {
+for (var index = 1; index <= pregunta; index++) {
   cliente.nombre = prompt("Escribe tu nombre (solo nombre). Cliente numero ".concat(index));
   cliente.apellido = prompt("Escribe tu apellido. Cliente numero ".concat(index));
   cliente.edad = parseInt(prompt("Escribe tu edad (solo numeros). Cliente numero ".concat(index)));
