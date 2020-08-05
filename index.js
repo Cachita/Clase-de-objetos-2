@@ -12,3 +12,8 @@
 // Dentro del ciclo ir pidiendo los datos y guardar los datos en el array.
 // Luego de haber pedido todos los datos, un ciclo que llame al método y lo imprima en pantalla.
 
+const x = {
+    nombre: '',
+    apellido: '',
+    edad: '', 
+}
