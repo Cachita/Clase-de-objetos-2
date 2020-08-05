@@ -19,12 +19,15 @@ const cliente = {
   apellido: '',
   edad: 0,
   };
-  const x = [];
+  const x = [cliente];
 
-  for (let index = 1; index <= pregunta; index++) {
+  for (let index = 0; index < pregunta; index++) {
       cliente.nombre = prompt(`Escribe tu nombre (solo nombre). Cliente numero ${index}`);
       cliente.apellido = prompt(`Escribe tu apellido. Cliente numero ${index}`);
       cliente.edad = parseInt(prompt(`Escribe tu edad (solo numeros). Cliente numero ${index}`));
       x.push(Object.assign({}, cliente));
-      console.log(x)
   }
+
+  for (let i = 0; i < x.length; i++) {
+    console.log(x[i]);
+}

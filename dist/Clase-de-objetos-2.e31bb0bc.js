@@ -135,14 +135,17 @@ var cliente = {
   apellido: '',
   edad: 0
 };
-var x = [];
+var x = [cliente];
 
-for (var index = 1; index <= pregunta; index++) {
+for (var index = 0; index < pregunta; index++) {
   cliente.nombre = prompt("Escribe tu nombre (solo nombre). Cliente numero ".concat(index));
   cliente.apellido = prompt("Escribe tu apellido. Cliente numero ".concat(index));
   cliente.edad = parseInt(prompt("Escribe tu edad (solo numeros). Cliente numero ".concat(index)));
   x.push(Object.assign({}, cliente));
-  console.log(x);
+}
+
+for (var i = 0; i < x.length; i++) {
+  console.log(x[i]);
 }
 },{}],"../../AppData/Roaming/nvm/v14.6.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
