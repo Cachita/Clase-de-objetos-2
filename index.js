@@ -12,8 +12,18 @@
 // Dentro del ciclo ir pidiendo los datos y guardar los datos en el array.
 // Luego de haber pedido todos los datos, un ciclo que llame al método y lo imprima en pantalla.
 
-const x = {
-    nombre: '',
-    apellido: '',
-    edad: '', 
-}
+let pregunta = prompt("Hola, sean todos bienvenidos al restaurante Q'le arepa.");
+
+const cliente = {
+  nombre: '',
+  apellido: '',
+  edad: 0,
+  };
+  const x = [];
+  
+  for (let index = 0; index <= pregunta; index++) {
+      cliente.nombre = prompt(`Escribe tu nombre (solo nombre) ${index}`);
+      cliente.apellido = prompt(`Escribe tu apellido ${index}`);
+      cliente.edad = parseInt(prompt(`Escribe tu edad ${index}`));
+
+  }
