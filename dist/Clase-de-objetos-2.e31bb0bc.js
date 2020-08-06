@@ -148,7 +148,7 @@ for (var index = 0; index < pregunta; index++) {
 }
 
 for (var i = 0; i < x.length; i++) {
-  console.log(x[i]);
+  console.log(cliente.datos());
 }
 },{}],"../../AppData/Roaming/nvm/v14.6.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -178,7 +178,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56338" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57872" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
