@@ -22,7 +22,7 @@ const cliente = {
     return `${this.nombre} ${this.apellido} ${this.edad}`;
   } 
 };
-  const x = [cliente];
+  const x = [];
 
   for (let index = 0; index < pregunta; index++) {
       cliente.nombre = prompt(`Escribe tu nombre (solo nombre). Cliente numero ${index}`);
@@ -32,6 +32,6 @@ const cliente = {
   }
 
   for (let i = 0; i < x.length; i++) {
-    console.log(cliente.datos());
+    console.log(x[i].datos());
 }
 
