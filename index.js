@@ -18,10 +18,10 @@ const cliente = {
   nombre: '',
   apellido: '',
   edad: 0,
-    datos() {
+  datos() {
     return `${this.nombre} ${this.apellido} ${this.edad}`;
-    } 
-  };
+  } 
+};
   const x = [cliente];
 
   for (let index = 0; index < pregunta; index++) {
